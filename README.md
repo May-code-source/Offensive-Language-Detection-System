@@ -15,7 +15,7 @@
 Cyberbullying has become a severe issue, facilitated by the growth of social media. It can have devastating psychological impacts on victims. This project involved building a multi-modal machine learning system to detect offensive language in social media posts and chat messages, which are commonly used in the case of cyberbullying. The system utilizes natural language processing and deep learning for real-time analysis.
 
 ## Highlight
-- Preprocessed data including emoji handling, their conversion into textual form, cleaning, EDA, and data augmentation to address class imbalance
+- Preprocessed data including emoji handling😆, their conversion into textual form, cleaning, EDA, and data augmentation to address class imbalance
 - Morphological Analysis
 - Sentiment Analysis
 - Stratified Cross Validation
@@ -26,7 +26,7 @@ Cyberbullying has become a severe issue, facilitated by the growth of social med
 
 ## Dataset
 
-- Collected a diverse dataset of 10,000 tweets that encompass emojis and across various topics. Data was sourced from Twitter and Kaggle 
+- Collected a diverse dataset of 10,000 tweets that encompass emojis 😃 and across various topics. Data was sourced from Twitter and Kaggle 
 
 ## Evaluation
 - Accuracy, precision, recall, F1 score, ROC AUC
@@ -41,4 +41,4 @@ Cyberbullying has become a severe issue, facilitated by the growth of social med
 - Chat interface showcases real-world applicability.
 
 ## Conclusion
-The system successfully detects cyberbullying instances in text and emojis using deep learning.
+The system successfully detects cyberbullying instances in text and emojis😃 using deep learning.
