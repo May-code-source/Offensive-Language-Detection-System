@@ -1,65 +1,44 @@
 # Offensive-Language-Detection-System
 
-# Cryptocurrency-Price-Prediction
 ## Table of content
 
-- [Project Overview](#project-overview)
+- [Overview](#overview)
 - [Highlight](#highlight)
-- [Data Source](#data-source)
-- [Data Preprocessing Tools and Techniques](#data-preprocessing-tools-and-techniques)
-- [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Model Evaluation](#model-evaluation)
-- [Insights](#insights)
-- [Considerations ](#considerations)
+- [Dataset](#dataset)
+- [Evaluation](#evaluation)
+- [Deployment](#deployment)
+- [Conclusion](#conclusion)
 
 
-## Project Overview
+## Overview
 
-Investors seek accurate cryptocurrency price predictions to maximize profits in this volatile market. This project involved predicting cryptocurrency prices using machine learning models. The goal was to forecast prices across different time horizons to aid investment decisions.
+Cyberbullying has become a severe issue, facilitated by the growth of social media. It can have devastating psychological impacts on victims. This project involved building a multi-modal machine learning system to detect offensive language in social media posts and chat messages, which are commonly used in the case of cyberbullying. The system utilizes natural language processing and deep learning for real-time analysis.
 
 ## Highlight
-- Data collection using Binance API
-- Exploratory data analysis
-- Feature engineering
-- Modeling with LSTM, XGBoost, Random Forest, and evaluation
-- GUI development with Streamlit
+- Preprocessed data including emoji handling, their conversion into textual form, cleaning, EDA, and data augmentation to address class imbalance
+- Morphological Analysis
+- Sentiment Analysis
+- Stratified Cross Validation
+- Optuna Hyperparemeter Tunning  
+- Compared SVM, LSTM, and BERT models
+- BERT achieved the best accuracy of 94% on the test set
+- Integrated model into chat interface with real-time analytics
 
-## Data Source
+## Dataset
 
-Historical daily price data from Binance API for the top 20 cryptocurrencies from 2017-2023. The dataset included various market data variables such as open, high, low, close prices, volume, and more.
+- Collected a diverse dataset of 10,000 tweets that encompass emojis and across various topics. Data was sourced from Twitter and Kaggle 
 
-## Data Preprocessing Tools and Techniques
+## Evaluation
+- Accuracy, precision, recall, F1 score, ROC AUC
+- Confusion matrix, precision-recall curve
+- Learning curves
 
-- Python
-- Pandas, Matplotlib, Seaborn for EDA
-- Sklearn for preprocessing
-- Statistical Analysis
-- Time series analysis
-- Correlation Analysis 
-- Feature Engineering
-- Normalization  
-- Decision TreeRegressor, XGBoost, Random Forest for predictive modeling 
-- Streamlit for Graphical User Interface
+## Deployment
+- Flask backend framework
+- SocketIO enabled real-time analysis
+- Proactive intervention enabled by real-time analysis to foster positive interactions through increased awareness and deterrence of negative content
+- Chat interface with sentiment chart, timing data, and warnings
+- Chat interface showcases real-world applicability.
 
-### Exploratory Data Analysis:
-Data was examined for patterns, trends, and outliers using statistical analysis and visualizations
-
-### Model Evaluation:
-Performance metrics, including Mean Absolute Error (MAE), Mean Absolute Percentage Error (MAPE), Root Mean Squared Error (RMSE), and R-squared (R2), were calculated for model evaluation.
-
-![Picture1](https://github.com/May-code-source/Cryptocurrency-Price-Prediction/assets/115402970/bf47e91f-fba3-433c-b8d8-2311785011da)
-
-
-## Insights
-
-- Most coins exhibited positive skewness in their price distribution. Positive skewness indicates that the majority of cryptocurrencies tend to have prices skewed towards higher values, this suggests potential for sharp upward movements in prices. This indicates investors may benefit from long positions.
-- High volatility observed in prices for all cryptocurrencies  indicates frequent and significant price fluctuations in the cryptocurrency market. This can present opportunities for traders but also increased risks. The need for risk management strategies is required to minimize the downside.
-- There is a significant positive correlation found between Bitcoin and other major coins like Ethereum. Investors in altcoins should be aware that the performance of these coins can be influenced by Bitcoin's price. Diversifying across different coins may not always provide complete independence from Bitcoin's price trends
-- Feature importance analysis revealed that open, high and low prices were top predictors
-- Short-term predictions were most accurate, with decreasing accuracy for longer horizons
-- Random Forest outperformed Decision Tree and XGBoost, achieving the best R2 score. The model provided reliable short and medium-term predictions.
-
-## Considerations  
-- Model selection and hyperparameter tuning required time and experimentation.
-- Feature engineering involved trial and error.
-- Balancing model complexity and generalization to avoid overfitting or underfitting required careful consideration..
+## Conclusion
+The system successfully detects cyberbullying instances in text and emojis using deep learning.
