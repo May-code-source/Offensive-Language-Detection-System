@@ -33,6 +33,9 @@ Cyberbullying has become a severe issue, facilitated by the growth of social med
 - Confusion matrix, precision-recall curve
 - Learning curves
 
+![Picture3](https://github.com/May-code-source/Offensive-Language-Detection-System/assets/115402970/452f31cc-632d-4a75-ad36-4a228f91c465)
+
+
 [View Jupyter Note Here](https://nbviewer.org/github/May-code-source/Offensive-Language-Detection-System/blob/main/Detection_Script.ipynb)
 
 ## Deployment
